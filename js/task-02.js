@@ -16,12 +16,10 @@ const ingredientItem = ingredients.map(elem => {
   ingredientsElement.classList.add('item');
 
   ingredientsElement.textContent = elem;
-  
-  ingredientsList.append(ingredientsElement);
 
-  console.log(ingredientsElement)
+  return ingredientsElement
 });
 
-
+ingredientsList.append(...ingredientItem);
 
 
